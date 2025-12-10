@@ -68,6 +68,16 @@ A sample e-commerce site designed for UI automation practice and validating logi
 
 	Run multiple test data sets cleanly.
 
+## API Testing
+
+This project also includes basic API test automation using:
+
+- Python `requests` library
+- Pytest for running and asserting tests
+- A reusable `APIClient` helper (`utils/api_client.py`)
+- Tests for public REST endpoints (JSONPlaceholder) covering GET, POST and negative scenarios
+
+
 ## Project Structure
 
 	Selenium_Project/
@@ -129,6 +139,10 @@ Run by markers
 	pytest -m regression
 	pytest -m "not slow"
 
+Run only API tests
+
+	pytest tests/api -v
+
 ## Screenshots on Failure
 
 If a test fails, a screenshot is automatically saved in:
@@ -161,3 +175,4 @@ Example:
 - Allure reports
 
 - External JSON/CSV test data
+
