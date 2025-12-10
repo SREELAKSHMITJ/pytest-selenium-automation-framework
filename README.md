@@ -70,7 +70,7 @@ A sample e-commerce site designed for UI automation practice and validating logi
 
 ## API Testing
 
-This project also includes basic API test automation using:
+API testing is integrated into this project alongside Selenium UI automation to provide complete test coverage using:
 
 - Python `requests` library
 - Pytest for running and asserting tests
@@ -179,5 +179,6 @@ Example:
 - Allure reports
 
 - External JSON/CSV test data
+
 
 
