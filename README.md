@@ -90,11 +90,15 @@ This project also includes basic API test automation using:
 	│
 	├── tests/  
 	│   ├── conftest.py
-	│   ├── test_login.py
-	│   ├── test_add_to_cart.py
-	│   └── test_checkout_e2e.py
+	│   ├── api/
+	│   	├──test_jsonplaceholder.py
+	│   ├── ui/
+	│   	├── test_login.py
+	│   	├── test_add_to_cart.py
+	│   	└── test_checkout_e2e.py
 	│
-	├── utils/                
+	├── utils/    
+	│   ├── api_client.py
 	│   └── driver_setup.py
 	│
 	├── screenshots/          
@@ -175,4 +179,5 @@ Example:
 - Allure reports
 
 - External JSON/CSV test data
+
 
