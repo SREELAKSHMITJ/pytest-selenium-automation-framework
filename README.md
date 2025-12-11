@@ -168,6 +168,26 @@ Example:
 
     	assert login_page.is_logged_in(), "User should be logged in"
 
+## CI/CD (GitHub Actions)
+
+This project uses **GitHub Actions** to automatically run the test suite on every push to `main`.
+
+### CI Run Proof
+
+**Workflow Success:**
+![CI Success](assets/screenshots/ci-success.png)
+
+**Report Artifact Generated:**
+![CI Artifact](assets/screenshots/ci-artifact.png)
+
+---
+
+## Test Reporting (pytest-html)
+
+**HTML Report Example:**
+![Pytest HTML Report](assets/screenshots/pytest-html-report.png)
+
+
 ## Future Enhancements
 
 - Logging using Python logging module
@@ -179,6 +199,7 @@ Example:
 - Allure reports
 
 - External JSON/CSV test data
+
 
 
 
