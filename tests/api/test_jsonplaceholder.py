@@ -33,3 +33,10 @@ def test_create_post_should_return_201_and_echo_back_data():
     assert body["body"] == payload["body"]
     assert body["userId"] == payload["userId"]
     assert "id" in body   # Fake, but always returned
+
+def test_get_invalid_post_should_return_404():
+    client = APIClient(BASE_URL)
+
+    response = client.get("/posts/999999")
+
+    assert response.status_code == 404
